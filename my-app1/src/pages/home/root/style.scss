@@ -1,0 +1,45 @@
+#home{
+    .content{
+        position: absolute;
+        top: 44px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .banner{
+        img{
+            width: 100%;
+        }
+        .swiper-pagination-bullet-active{
+            background: #fff;
+        }
+    }
+    .shop-bar{
+        height: 50px;
+        padding: 0 10px;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        span{
+            padding-right: 10px;
+        }
+    }
+    .list{
+        padding: 0 10px;
+        .item{
+            display: block;
+            height: 50px;
+            display: flex;
+            span{
+                line-height: 50px;
+                color: #666;
+            }
+            span:nth-of-type(1){
+                flex: 1;
+            }
+            span:nth-of-type(2){
+                width: 30px;
+            }
+        }
+    }
+}

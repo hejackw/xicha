@@ -1,0 +1,85 @@
+#cart{
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        bottom: 45px;
+        .cart-item-wrap{
+            position: relative;
+            .delete-btn{
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+                height: 100%;
+                width: 100px;
+                background: #f00;
+                color: #fff;
+                text-align: center;
+                line-height: 76px;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .cart-item{
+                &.active{
+                    transition: 200ms;
+                }
+                background: #fff;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                padding: 10px 20px;
+                .left{
+                    width: 70px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .center{
+                    flex: 1;
+                    margin: 0 10px;
+                    .title{
+                        font-size: 14px;
+                    }
+                }
+                .right{
+                    .price{
+                        color: #f00;
+                        padding: 5px 0;
+                    }
+                    .handle{
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        span{
+                            padding: 0 6px;
+                            border-right: 1px solid #ddd;
+                            &:last-of-type{
+                                border: none;
+                            }
+                            &.btn.disabled{
+                                background: #f3f3f3;
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .footer{
+        width: 100%;
+        height: 45px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #f00;
+        .name{
+            width: 100%;
+            line-height: 45px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
